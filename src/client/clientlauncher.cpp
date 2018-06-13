@@ -94,6 +94,8 @@ bool ClientLauncher::run(GameParams &game_params, const Settings &cmd_args)
 	}
 
 	porting::setXorgClassHint(video_driver->getExposedVideoData(), PROJECT_NAME_C);
+	
+    porting::setXorgNetWMPID(video_driver->getExposedVideoData());
 
 	porting::setWindowIcon(device);
 

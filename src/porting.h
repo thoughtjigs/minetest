@@ -342,6 +342,8 @@ inline const char *getPlatformName()
 void setXorgClassHint(const video::SExposedVideoData &video_data,
 	const std::string &name);
 
+void setXorgNetWMPID(const video::SExposedVideoData &video_data);
+
 bool setWindowIcon(IrrlichtDevice *device);
 
 bool setXorgWindowIconFromPath(IrrlichtDevice *device,
